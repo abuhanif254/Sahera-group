@@ -13,11 +13,13 @@ export function Constellation() {
     // Add some jitter to vertices to make it look like a network rather than a perfect sphere
     const pos = geo.attributes.position;
     for (let i = 0; i < pos.count; i++) {
+      const pseudoRandom = (Math.sin(i * 12.9898 + 78.233) * 43758.5453) % 1;
+      const normalizedRandom = Math.abs(pseudoRandom);
       pos.setXYZ(
         i,
-        pos.getX(i) * (1 + (Math.random() - 0.5) * 0.2),
-        pos.getY(i) * (1 + (Math.random() - 0.5) * 0.2),
-        pos.getZ(i) * (1 + (Math.random() - 0.5) * 0.2)
+        pos.getX(i) * (1 + (normalizedRandom - 0.5) * 0.2),
+        pos.getY(i) * (1 + (normalizedRandom - 0.5) * 0.2),
+        pos.getZ(i) * (1 + (normalizedRandom - 0.5) * 0.2)
       );
     }
     geo.computeVertexNormals();

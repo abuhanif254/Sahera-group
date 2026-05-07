@@ -28,7 +28,7 @@ export function PhilosophySection() {
       <div className="max-w-4xl mx-auto space-y-16 md:space-y-24 text-center select-none font-medium text-2xl md:text-4xl lg:text-5xl leading-tight md:leading-tight lg:leading-tight text-white tracking-tight">
         
         <motion.p style={{ opacity: opacity1, filter: blur1 }}>
-          Innovation isn't about moving fast and breaking things. It's about <span className="text-cyan-400">calculated precision</span>.
+          Innovation isn&apos;t about moving fast and breaking things. It&apos;s about <span className="text-cyan-400">calculated precision</span>.
         </motion.p>
         
         <motion.p style={{ opacity: opacity2, filter: blur2 }}>
@@ -36,7 +36,7 @@ export function PhilosophySection() {
         </motion.p>
         
         <motion.p style={{ opacity: opacity3, filter: blur3 }}>
-          We don't launch MVPs. We forge <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">category-defining powerhouses.</span>
+          We don&apos;t launch MVPs. We forge <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">category-defining powerhouses.</span>
         </motion.p>
         
       </div>

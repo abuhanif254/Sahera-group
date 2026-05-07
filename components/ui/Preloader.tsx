@@ -58,7 +58,7 @@ export function Preloader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-slate-950 text-white"
+          className="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white"
         >
           <div className="flex flex-col items-center justify-center gap-8">
             <div className="relative flex h-12 w-12 items-center justify-center">
@@ -72,15 +72,15 @@ export function Preloader() {
             </div>
             
             <div className="flex flex-col items-center gap-2">
-              <span className="font-mono text-sm tracking-[0.2em] text-slate-400 uppercase">
+              <span className="font-mono text-sm tracking-[0.2em] text-slate-500 dark:text-slate-400 uppercase">
                 Initializing
               </span>
-              <span className="font-mono text-3xl font-light tracking-tighter text-cyan-400">
+              <span className="font-mono text-3xl font-light tracking-tighter text-cyan-500 drop-shadow-[0_0_8px_rgba(6,182,212,0.5)]">
                 {displayProgress.toString().padStart(3, '0')}%
               </span>
             </div>
 
-            <div className="w-48 h-[1px] bg-slate-800 relative overflow-hidden mt-4">
+            <div className="w-48 h-[1px] bg-slate-200 dark:bg-slate-800 relative overflow-hidden mt-4">
               <motion.div 
                 className="absolute top-0 left-0 bottom-0 bg-cyan-400"
                 initial={{ width: "0%" }}

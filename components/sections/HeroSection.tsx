@@ -47,10 +47,10 @@ export function HeroSection() {
              Sahera Group Venture Studio
           </motion.div>
           
-          <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white leading-[1.1]">
+          <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-slate-900 dark:text-white leading-[1.1]">
             Building the
             <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40">
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-slate-900 to-slate-500 dark:from-white dark:to-white/40">
               Future of the
             </span>
             <br />
@@ -59,15 +59,15 @@ export function HeroSection() {
             </span>
           </motion.h1>
 
-          <motion.p variants={itemVariants} className="text-lg md:text-xl text-slate-400 max-w-lg leading-relaxed mt-4">
+          <motion.p variants={itemVariants} className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed mt-4">
             We are a solo-founder holding company engineering category-defining software solutions and immersive digital experiences.
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex gap-4 mt-8 flex-wrap">
-            <a href="/ventures" className="px-8 py-4 rounded-full bg-white text-slate-950 font-medium tracking-wide hover:scale-105 hover:brightness-125 transition-all duration-300 active:scale-95 shadow-[0_0_40px_rgba(255,255,255,0.3)] inline-flex">
+            <a href="/ventures" className="px-8 py-4 rounded-full bg-slate-900 text-white dark:bg-white dark:text-slate-950 font-medium tracking-wide hover:scale-105 hover:brightness-125 transition-all duration-300 active:scale-95 shadow-[0_0_40px_rgba(0,0,0,0.1)] dark:shadow-[0_0_40px_rgba(255,255,255,0.3)] inline-flex">
               Explore Ventures
             </a>
-            <button className="px-8 py-4 rounded-full glass text-white font-medium tracking-wide hover:bg-white/10 hover:scale-105 hover:brightness-125 transition-all duration-300">
+            <button className="px-8 py-4 rounded-full glass text-slate-900 dark:text-white font-medium tracking-wide hover:bg-slate-900/5 dark:hover:bg-white/10 hover:scale-105 hover:brightness-125 transition-all duration-300">
               Our Philosophy
             </button>
           </motion.div>
